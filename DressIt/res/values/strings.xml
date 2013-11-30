@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dress It</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nameLabel">Name</string>
+    <string name="emailLabel">Email</string>
+    <string name="passwordLabel">Password</string>
+    <string name="passwordConfLabel">Password Confirmation</string>
+    <string name="createLabel">Create</string>
+    <string name="nameDefaultText">Key in your name</string>
+    <string name="emailDefaultText">Key in your Text</string>
+    <string name="passwordDefaultText">Password</string>
+    <string name="loginButtonText">Login</string>
+    <string name="registerButtonText">Register</string>
+    <string name="logOffButtonText">Log Off</string>
+    <string name="welcomeText">Welcome</string>
+
+</resources>
