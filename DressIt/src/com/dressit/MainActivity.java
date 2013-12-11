@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
 	private User loggedUser;
 	DressItApplication myapp;
 	@Override
+	//hhhhh
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
