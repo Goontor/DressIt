@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
 	private Button registerParsell;
 	private Button loginParsell;
 	private Button logOffParsell;
+	private Button profilParsell;
 	private TextView welcomeText;
 	private User loggedUser;
 	DressItApplication myapp;
@@ -29,10 +30,15 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		StackMobAndroid.init(getApplicationContext(), 0,
-				"f3054145-2d44-4f26-a94f-31118890f4ed");
+		if (StackMob.getStackMob() == null) 
+		{	StackMobAndroid.init(getApplicationContext(), 0,
+					"f3054145-2d44-4f26-a94f-31118890f4ed");
+		}
 		myapp = (DressItApplication) getApplication();
 		registerParsell = (Button) findViewById(R.id.registerLead);
+		loginParsell = (Button) findViewById(R.id.LoginLead);
+		logOffParsell = (Button) findViewById(R.id.LogOff);
+		profilParsell = (Button) findViewById(R.id.Profile);
 		registerParsell.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -43,7 +49,7 @@ public class MainActivity extends Activity {
 				startActivity(registerIntent);
 			}
 		});
-		loginParsell = (Button) findViewById(R.id.LoginLead);
+		
 		loginParsell.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -54,7 +60,17 @@ public class MainActivity extends Activity {
 				startActivity(registerIntent);
 			}
 		});
-		logOffParsell = (Button) findViewById(R.id.LogOff);
+		profilParsell.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent registerIntent = new Intent(MainActivity.this,
+						ProfilPage.class);
+				startActivity(registerIntent);
+			}
+		});
+		
 		logOffParsell.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -89,30 +105,36 @@ public class MainActivity extends Activity {
 					// TODO Auto-generated method stub
 					
 				}
-
+				@Override
 				public void success(List<User> list) {
 					
-					User loggedUserf = list.get(0);
-					setMyAppUser(loggedUserf);
-					
-					Log.d("eee","eee"+list.get(0).getUsername());
-				}
+					final User loggedUserf = list.get(0);
+					runOnUiThread(new Runnable() {
+						  @Override
+						  public void run() {
+						    setMyAppUser(loggedUserf);
+						  }
+						});
+					}
 				
-			});
+				});
+			
 			
 		} else {
 			logOffParsell.setVisibility(View.GONE);
 			welcomeText.setVisibility(View.GONE);
 		}
+		welcomeText.invalidate();
 		
 	}
 	public void setMyAppUser(User user){
 		myapp.setUser(user);
 		String welcome = welcomeText.getText().toString();
-		welcome = welcome+" "+myapp.getUser().getUsername();
+		welcome = welcome+" "+myapp.getUser().getPseudo();
 		welcomeText.setText(welcome);
-		finish();
-		startActivity(getIntent());
+		
 	}
+	
+	
 
 }

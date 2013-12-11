@@ -21,16 +21,57 @@
 	        android:orientation="vertical" >
 	        
 		        <EditText 
-		            android:id="@+id/nameInput"
-		            android:inputType="text"
+		            android:id="@+id/numberInput"
 		            android:gravity="center_horizontal"
 		            android:textAlignment="gravity"
 		            android:layout_marginTop="4dip"
 		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
+		            android:inputType="number"
 		            android:layout_width="fill_parent"
 		        	android:layout_height="wrap_content"
-		        	android:hint="@string/nameDefaultText"
-		            />"
+		        	android:hint="@string/numberDefaultText"
+		            />
+		        <EditText 
+		            android:id="@+id/pseudoInput"
+		            android:inputType="text"
+		            android:textAlignment="center"
+		            android:gravity="center_horizontal"
+		            android:layout_marginTop="4dip"
+		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
+		            android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:hint="@string/pseudoDefaultText"
+		        	/>
+		        <EditText 
+		            android:id="@+id/FirstNameInput"
+		            android:inputType="text"
+		            android:textAlignment="center"
+		            android:gravity="center_horizontal"
+		            android:layout_marginTop="4dip"
+		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
+		            android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:hint="@string/firstNameDefaultText"
+		        	/>
+		        <EditText 
+		            android:id="@+id/LastNameInput"
+		            android:inputType="text"
+		            android:textAlignment="center"
+		            android:gravity="center_horizontal"
+		            android:layout_marginTop="4dip"
+		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
+		            android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:hint="@string/lastNameDefaultText"
+		        	/>
 		        <EditText 
 		            android:id="@+id/emailInput"
 		            android:inputType="text"
@@ -38,26 +79,57 @@
 		            android:gravity="center_horizontal"
 		            android:layout_marginTop="4dip"
 		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
 		            android:layout_width="fill_parent"
 		        	android:layout_height="wrap_content"
 		        	android:hint="@string/emailDefaultText"
-		        	/>
+		        	/>"
+			        <RadioGroup
+			            android:id="@+id/sexeSelect"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:layout_gravity="center_horizontal"
+			        	android:orientation="horizontal">"
+			            <RadioButton 
+			            android:textAlignment="center"
+			            android:gravity="center_horizontal"
+			            android:layout_marginTop="4dip"
+			            android:layout_marginBottom="4dip"
+			            android:layout_marginLeft="20dip"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:text="Male"/>
+			            <RadioButton 
+			            android:textAlignment="center"
+			            android:gravity="center_horizontal"
+			            android:layout_marginTop="4dip"
+			            android:layout_marginBottom="4dip"
+			            android:layout_marginRight="20dip"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:text="Female"/>
+			            </RadioGroup>
 		        <EditText 
 		            android:id="@+id/password"
-		            android:inputType="text"
+		            android:inputType="textPassword"
 		            android:layout_width="fill_parent"
 		            android:gravity="center_horizontal"
 		            android:textAlignment="center"
 		            android:layout_marginTop="4dip"
 		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
 		        	android:layout_height="wrap_content"
 		        	android:hint="@string/passwordDefaultText"
 		        	/>
 		        <EditText 
 		            android:id="@+id/passwordConf"
-		            android:inputType="text"
+		            android:inputType="textPassword"
 		            android:layout_marginTop="4dip"
 		            android:layout_marginBottom="4dip"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip"
 		            android:textAlignment="center"
 		            android:gravity="center_horizontal"
 		            android:layout_width="fill_parent"
@@ -78,6 +150,8 @@
 	            android:layout_gravity="center_horizontal"
 	            android:gravity="center_horizontal"
 	            android:layout_width="fill_parent"
+	            android:layout_marginLeft="20dip"
+		        android:layout_marginRight="20dip"
 	            android:layout_height="wrap_content"/>"
 	    </LinearLayout>
     

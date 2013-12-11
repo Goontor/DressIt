@@ -9,12 +9,24 @@
     <string name="passwordLabel">Password</string>
     <string name="passwordConfLabel">Password Confirmation</string>
     <string name="createLabel">Create</string>
-    <string name="nameDefaultText">Key in your name</string>
-    <string name="emailDefaultText">Key in your Text</string>
+    <string name="numberDefaultText">Key in your mobile phone</string>
+    <string name="firstNameDefaultText">Key in your first name</string>
+    <string name="lastNameDefaultText">Key in your last name</string>
+    <string name="pseudoDefaultText">Key in your pseudo</string>
+    <string name="emailDefaultText">Key in your mail</string>
     <string name="passwordDefaultText">Password</string>
     <string name="loginButtonText">Login</string>
     <string name="registerButtonText">Register</string>
     <string name="logOffButtonText">Log Off</string>
     <string name="welcomeText">Welcome</string>
+    <string name="action_update">Update</string>
+    <string name="sexeLabel">Gender</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="hello">Hello World, ImageExplorerActivity!</string>
+    <string-array name="sexe">
+        <item >Male</item>
+        <item >Female</item>
+    </string-array>
 
 </resources>

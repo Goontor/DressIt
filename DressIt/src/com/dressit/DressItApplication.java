@@ -4,7 +4,6 @@ import android.app.Application;
 
 public class DressItApplication extends Application {
 	private User user;
-	private Purse purse;
 	
 	public  void setUser(User myUser){
 		user = myUser;

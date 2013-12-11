@@ -29,6 +29,15 @@
         <activity
             android:name="LoginActivity">           
         </activity>
+        <activity
+            android:name="ProfilPage">
+        </activity>
+        <activity
+            android:name="EditProfil">
+        </activity>
+        <activity
+            android:name="FilePickerActivity">
+        </activity>
     </application>
 
 </manifest>

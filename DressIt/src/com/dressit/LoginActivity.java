@@ -28,7 +28,7 @@ public class LoginActivity extends Activity {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login_layout);
-		userNameFiller = (EditText) findViewById(R.id.nameInputLogin);
+		userNameFiller = (EditText) findViewById(R.id.numberInputLogin);
 		passwordFiller = (EditText) findViewById(R.id.passwordLogin);
 		loginButton = (Button) findViewById(R.id.LoginButton);
 		loginButton.setOnClickListener(new View.OnClickListener() {
