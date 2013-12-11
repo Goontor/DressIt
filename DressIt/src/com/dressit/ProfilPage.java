@@ -31,7 +31,7 @@ public class ProfilPage extends Activity {
 
     Button editButton;
     TextView pseudo;
-    TextView firstName;
+    TextView firstName;   
     TextView lastName;
     TextView phoneNumber;
     TextView sexe;
