@@ -34,7 +34,7 @@ public class ProfilPage extends Activity {
     TextView firstName;
     TextView lastName;
     TextView phoneNumber;
-    TextView sexe;
+    TextView sexe;   
     ImageView profilPic;
     
 	protected void onCreate(Bundle savedInstanceState) {
