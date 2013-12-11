@@ -7,7 +7,7 @@ import com.stackmob.sdk.model.StackMobUser;
 
 public class User extends StackMobUser {
 	private String email;
-	private String firstName;
+	private String firstName; 
 	private String lastName;
 	private String pseudo;
 	private String sexe;
